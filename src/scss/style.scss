@@ -1,0 +1,24 @@
+// normalize css
+@import 'vendor/normalize.scss';
+
+// vars
+@import 'vars.scss';
+
+// fonts
+@import 'fonts.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: $family;
+}
+
+// components
+@import 'components/header.scss';
+@import 'components/footer.scss';
