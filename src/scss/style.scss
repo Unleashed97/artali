@@ -17,6 +17,17 @@ body {
     margin: 0;
 
     font-family: $family;
+    color: $colors-secondary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 ul {
@@ -34,4 +45,5 @@ a {
 @import 'components/header.scss';
 @import 'components/container.scss';
 @import 'components/nav.scss';
+@import 'components/showcase.scss';
 @import 'components/footer.scss';
