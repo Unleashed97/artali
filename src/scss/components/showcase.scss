@@ -11,6 +11,10 @@
         text-align: center;
 
         background: url('../img/showcase/bg.jpg') no-repeat center / cover;
+
+        @media (max-width: $sm) {
+            padding: 0 15px;
+        }
     }
 
     &__title {
@@ -20,6 +24,18 @@
         font-weight: 500;
         line-height: 1.2;
         color: $colors-primary;
+
+        @media (max-width: $lg) {
+            font-size: 70px;
+        }
+
+        @media (max-width: $md) {
+            font-size: 50px;
+        }
+
+        @media (max-width: $sm) {
+            font-size: 30px;
+        }
     }
 
     &__subtitle {

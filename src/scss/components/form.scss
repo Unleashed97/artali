@@ -5,6 +5,10 @@
 
     background-color: $colors-primary;
 
+    @media (max-width: $sm) {
+        padding: 50px 15px 50px;
+    }
+
     &__title {
         margin-bottom: 40px;
 
@@ -12,12 +16,21 @@
         font-weight: 500;
         line-height: 40px;
         letter-spacing: -1.6px;
+
+        @media (max-width: $sm) {
+            font-size: 20px;
+        }
     }
 
     &__group {
         display: flex;
+        gap: 30px;
 
         margin-bottom: 20px;
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+        }
 
         &--check {
             margin: 37px 0 32px;
@@ -32,10 +45,6 @@
 
     &__label {
         width: 100%;
-
-        & + & {
-            margin-left: 30px;
-        }
     }
 
     &__label-text {
@@ -110,6 +119,11 @@
         line-height: 26px;
         letter-spacing: -0.6px;
         color: #707378;
+
+        @media (max-width: $sm) {
+            font-size: 16px;
+            max-width: 270px;
+        }
     }
 
     &__btn {
@@ -121,6 +135,10 @@
     &__footer {
         display: flex;
         gap: 30px;
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+        }
     }
 
     &__footer-address {

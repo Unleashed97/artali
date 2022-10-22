@@ -10,7 +10,9 @@
 
             border-radius: 20px;
 
-            overflow: hidden;
+            @media (max-width: $md) {
+                margin-bottom: 30px;
+            }
         }
 
         .card__title {
@@ -20,6 +22,14 @@
             font-weight: 500;
             line-height: 40px;
             letter-spacing: -1.6px;
+
+            @media (max-width: $md) {
+                font-size: 24px;
+            }
+
+            @media (max-width: $sm) {
+                font-size: 18px;
+            }
         }
 
         .card__text {
@@ -96,6 +106,11 @@
             font-weight: 500;
             line-height: 80px;
             letter-spacing: -2.5px;
+
+            @media (max-width: $sm) {
+                font-size: 40px;
+                line-height: 60px;
+            }
         }
 
         .card__btn {
@@ -133,9 +148,13 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            gap: 80px;
+            gap: 30px;
 
             margin-bottom: 50px;
+
+            @media (max-width: $md) {
+                flex-direction: column;
+            }
         }
 
         .card__title,
@@ -148,6 +167,10 @@
 
         .card__date {
             color: rgba($colors-secondary, 0.5);
+
+            @media (max-width: $md) {
+                font-size: 16px;
+            }
         }
 
         .card__text {
@@ -157,6 +180,10 @@
         .card__image {
             border-radius: 20px;
             margin-bottom: 42px;
+
+            @media (max-width: $md) {
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -167,6 +194,16 @@
         letter-spacing: -0.8px;
 
         color: rgba($colors-secondary, 0.5);
+
+        @media (max-width: $md) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        @media (max-width: $sm) {
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
 
     &__image {

@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -9,11 +9,16 @@
         .header__inner {
             color: $colors-secondary;
         }
+
+        .burger__item {
+            background-color: $colors-secondary;
+        }
     }
 
     &__inner {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-top: 40px;
 
         color: $colors-primary;
