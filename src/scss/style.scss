@@ -41,6 +41,13 @@ a {
     color: inherit;
 }
 
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/container.scss';
@@ -50,4 +57,5 @@ a {
 @import 'components/form.scss';
 @import 'components/btn.scss';
 @import 'components/socials.scss';
+@import 'components/card.scss';
 @import 'components/footer.scss';

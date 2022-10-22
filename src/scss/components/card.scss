@@ -1,0 +1,35 @@
+.card {
+    &--about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .card__image {
+            max-height: 500px;
+            margin-bottom: 58px;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+        }
+
+        .card__title {
+            margin-bottom: 16px;
+
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 40px;
+            letter-spacing: -1.6px;
+        }
+
+        .card__text {
+            flex: 1 0 0;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: -0.8px;
+
+            color: rgba($colors-secondary, 0.5);
+        }
+    }
+}
