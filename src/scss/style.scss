@@ -47,6 +47,10 @@ img {
     height: auto;
 }
 
+.fixed {
+    position: fixed;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/logo.scss';

@@ -7,28 +7,30 @@
 
     &--footer {
         .nav__list {
-            @media (max-width: $md) {
-                flex-direction: column;
-            }
-        }
-
-        .nav__item {
-            @media (max-width: $lg) {
-                padding: 20px 20px;
-            }
-
             @media (max-width: $sm) {
-                padding: 20px 20px 20px 0;
+                flex-direction: column;
+                gap: 20px;
             }
         }
     }
     &__list {
         display: flex;
-        // gap: 69px;
+        gap: 69px;
+
+        @media (max-width: $lg) {
+            gap: 40px;
+        }
+
+        @media (max-width: $md) {
+            flex-direction: column;
+            // gap: 40px;
+        }
     }
 
     &__item {
-        padding: 20px 35px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.8px;
     }
     &__link {
         display: block;
@@ -41,6 +43,25 @@
     }
 
     &.active {
-        display: none;
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+
+        display: flex;
+        height: 100vh;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #6b8a9c;
+
+        .nav__list {
+            flex-direction: column;
+        }
+
+        .nav__item {
+            font-size: 24px;
+        }
     }
 }
