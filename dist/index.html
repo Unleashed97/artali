@@ -56,6 +56,70 @@
             </div>
         </div>
     </main>
+
+    <!-- section contacts -->
+    <section class="section section--contacts">
+        <div class="container container--lg">
+            <div class="section__inner">
+                <h2 class="section__title">Наши контакты</h2>
+                <div class="section__content">
+                    <form action="/" class="form">
+                        <header class="form__header">
+                            <p class="form__title">Обратная связь</p>
+                        </header>
+
+                        <div class="form__group">
+                            <label for="input-name" class="form__label">
+                                <span class="form__label-text">Ваше имя:</span>
+                                <input id="input-name" type="text" name="name" class="form__input" required>
+                            </label>
+
+                            <label for="input-surname" class="form__label">
+                                <span class="form__label-text">Ваша фамилия:</span>
+                                <input id="input-surname" type="text" name="surname" class="form__input" required>
+                            </label>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="input-tel" class="form__label">
+                                <span class="form__label-text">Номер телефона:</span>
+                                <input type="tel" id="input-tel" name="tel" class="form__input" required>
+                            </label>
+                        </div>
+
+                        <div class="form__group form__group--check">
+                            <label for="input-checkbox" class="form__label">
+                                <input type="checkbox" id="input-checkbox" class="form__checkbox" required>
+                                <span class="form__checkfield"></span>
+                                <span class="form__checkbox-text">Согласен с политикой обработкой данных</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--blue form__btn">
+                            Отправить
+                            <img src="img/icons/arrow.svg" alt="стрелка вправо">
+                        </button>
+
+                        <footer class="form__footer">
+                            <address class="form__footer-address">
+                                <span class="form__label-text">Наш номер телефона:</span>
+                                <a href="tel:+79663308366">+7 (966)-330-83-66</a>
+                                <a href="tel:+79096604858">
+                                    +7 (909)-660-48-58</a>
+                            </address>
+                            <address class="form__footer-address">
+                                <span class="form__label-text">Наш адрес:</span>
+                                <p>
+                                    Москва, Болотниковская
+                                    ул., 36, корп. 1
+                                </p>
+                            </address>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- footer include -->
     <footer class="footer">
 

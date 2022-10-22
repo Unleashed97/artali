@@ -1,0 +1,36 @@
+.section {
+    &--contacts {
+        .section__inner {
+            padding-top: 125px;
+        }
+
+        .section__content {
+            min-height: 766px;
+
+            padding: 0 50px;
+
+            display: flex;
+            justify-content: flex-end;
+
+            background: url('../img/section/contacts/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__inner {
+        padding-top: 167px;
+    }
+
+    &__title {
+        margin-bottom: 91px;
+
+        font-size: 65px;
+        font-weight: 500;
+        line-height: 75px;
+        letter-spacing: -2px;
+        color: $colors-secondary;
+
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+.btn {
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: $family;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+    color: $colors-primary;
+
+    border: 0;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+
+    &--blue {
+        background-color: $colors-blue;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: darken($colors-blue, 10%);
+        }
+    }
+}

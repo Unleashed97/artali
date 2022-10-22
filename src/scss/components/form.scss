@@ -1,0 +1,135 @@
+.form {
+    max-width: 553px;
+
+    padding: 117px 30px 131px;
+
+    background-color: $colors-primary;
+
+    &__title {
+        margin-bottom: 40px;
+
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: -1.6px;
+    }
+
+    &__group {
+        display: flex;
+
+        margin-bottom: 20px;
+
+        &--check {
+            margin: 37px 0 32px;
+
+            .form__label {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+    &__label {
+        width: 100%;
+
+        & + & {
+            margin-left: 30px;
+        }
+    }
+
+    &__label-text {
+        margin-bottom: 7px;
+
+        font-size: 12px;
+        line-height: 20px;
+        color: rgba($colors-secondary, 0.4);
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0 0 22px;
+
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.6px;
+        color: $colors-secondary;
+
+        border: 0;
+        border-bottom: 1px solid rgba($colors-secondary, 0.1);
+        border-radius: 0;
+
+        outline: none;
+
+        transition: 0.3s linear;
+
+        &:focus {
+            border-color: $colors-blue;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        z-index: 2;
+
+        width: 22px;
+        height: 22px;
+
+        opacity: 0;
+
+        &:checked ~ .form__checkfield::after {
+            opacity: 1;
+        }
+    }
+
+    &__checkfield {
+        position: relative;
+        display: block;
+
+        width: 22px;
+        height: 22px;
+
+        border-radius: 4px;
+        border: 1px solid #707378;
+
+        &::after {
+            content: url('../img/icons/check.svg');
+
+            position: absolute;
+            inset: -1px;
+            z-index: 1;
+
+            opacity: 0;
+
+            transition: 0.1s linear;
+        }
+    }
+
+    &__checkbox-text {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.6px;
+        color: #707378;
+    }
+
+    &__btn {
+        width: 100%;
+
+        margin-bottom: 55px;
+    }
+
+    &__footer {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__footer-address {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.6px;
+    }
+}
