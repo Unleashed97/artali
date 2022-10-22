@@ -10,7 +10,9 @@
 
         text-align: center;
 
-        background: url('../img/showcase/bg.jpg') no-repeat center / cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
         @media (max-width: $sm) {
             padding: 0 15px;
@@ -46,5 +48,18 @@
         letter-spacing: -0.8px;
 
         color: rgba($colors-primary, 60%);
+    }
+}
+
+// webp support
+.no-webp {
+    .showcase .showcase__inner {
+        background: url('../img/showcase/bg.jpg');
+    }
+}
+
+.webp {
+    .showcase .showcase__inner {
+        background: url('../img/showcase/bg.webp');
     }
 }

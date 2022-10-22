@@ -17,7 +17,6 @@
             display: flex;
             justify-content: flex-end;
 
-            background: url('../img/section/contacts/bg.jpg');
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -124,5 +123,18 @@
     &__btn {
         width: 100%;
         max-width: 554px;
+    }
+}
+
+// wepb support
+.no-webp {
+    .section--contacts .section__content {
+        background: url('../img/section/contacts/bg.jpg');
+    }
+}
+
+.webp {
+    .section--contacts .section__content {
+        background: url('../img/section/contacts/bg.webp');
     }
 }
