@@ -17,6 +17,12 @@
     background: none;
     cursor: pointer;
 
+    transition: 0.3s linear;
+
+    &:hover {
+        box-shadow: $shadow;
+    }
+
     &--blue {
         background-color: $colors-blue;
 

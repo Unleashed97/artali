@@ -1,0 +1,41 @@
+.modal {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 15px;
+
+    background-color: rgba($colors-secondary, 0.6);
+
+    overflow-y: auto;
+
+    &.active {
+        display: flex;
+    }
+
+    &__inner {
+        position: relative;
+        width: fit-content;
+
+        background-color: $colors-primary;
+
+        margin: auto;
+    }
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+
+        padding: 0;
+        border: 0;
+        background: none;
+        cursor: pointer;
+    }
+}

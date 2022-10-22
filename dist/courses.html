@@ -34,7 +34,7 @@
                         <a href="courses.html" class="nav__link">Курсы</a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Контакты</a>
+                        <a href="index.html#form" class="nav__link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -47,6 +47,68 @@
         </div>
     </div>
 </header>
+
+    <!-- modal include -->
+    <div class="modal">
+    <div class="modal__inner">
+        <button type="button" class="modal__close">
+            <img src="img/icons/close.svg" alt="перекрестие">
+        </button>
+        <form id="form" action="/" class="form form--modal">
+            <header class="form__header">
+                <p class="form__title">Обратная связь</p>
+            </header>
+
+            <div class="form__group">
+                <label for="input-name" class="form__label">
+                    <span class="form__label-text">Ваше имя:</span>
+                    <input id="input-name" type="text" name="name" class="form__input" required>
+                </label>
+
+                <label for="input-surname" class="form__label">
+                    <span class="form__label-text">Ваша фамилия:</span>
+                    <input id="input-surname" type="text" name="surname" class="form__input" required>
+                </label>
+            </div>
+
+            <div class="form__group">
+                <label for="input-tel" class="form__label">
+                    <span class="form__label-text">Номер телефона:</span>
+                    <input type="tel" id="input-tel" name="tel" class="form__input" required>
+                </label>
+            </div>
+
+            <div class="form__group form__group--check">
+                <label for="input-checkbox" class="form__label">
+                    <input type="checkbox" id="input-checkbox" class="form__checkbox" required>
+                    <span class="form__checkfield"></span>
+                    <span class="form__checkbox-text">Согласен с политикой обработкой данных</span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn--blue form__btn">
+                Отправить
+                <img src="img/icons/arrow.svg" alt="стрелка вправо">
+            </button>
+
+            <footer class="form__footer">
+                <address class="form__footer-address">
+                    <span class="form__label-text">Наш номер телефона:</span>
+                    <a href="tel:+79663308366">+7 (966)-330-83-66</a>
+                    <a href="tel:+79096604858">
+                        +7 (909)-660-48-58</a>
+                </address>
+                <address class="form__footer-address">
+                    <span class="form__label-text">Наш адрес:</span>
+                    <p>
+                        Москва, Болотниковская
+                        ул., 36, корп. 1
+                    </p>
+                </address>
+            </footer>
+        </form>
+    </div>
+</div>
 
     <!-- main -->
     <main>
@@ -64,7 +126,7 @@
                                     жанры</p>
 
                                 <span class="card__price">890 руб.</span>
-                                <button class="btn card__btn">Подробнее</button>
+                                <button type="button" class="btn card__btn modal-open">Подробнее</button>
                             </div>
 
                             <div class="card__desc">
@@ -86,7 +148,7 @@
                                     цветоведения, композиции</p>
 
                                 <span class="card__price">790 руб.</span>
-                                <button class="btn card__btn">Подробнее</button>
+                                <button type="button" class="btn card__btn modal-open">Подробнее</button>
                             </div>
 
                             <div class="card__desc">
@@ -110,7 +172,7 @@
                                     на максимум</p>
 
                                 <span class="card__price">690 руб.</span>
-                                <button class="btn card__btn">Подробнее</button>
+                                <button type="button" class="btn card__btn modal-open">Подробнее</button>
                             </div>
 
                             <div class="card__desc">
@@ -134,7 +196,7 @@
                                 </p>
 
                                 <span class="card__price">590 руб.</span>
-                                <button class="btn card__btn">Подробнее</button>
+                                <button type="button" class="btn card__btn modal-open">Подробнее</button>
                             </div>
 
                             <div class="card__desc">
@@ -156,7 +218,7 @@
                                 </p>
 
                                 <span class="card__price">490 руб.</span>
-                                <button class="btn card__btn">Подробнее</button>
+                                <button type="button" class="btn card__btn modal-open">Подробнее</button>
                             </div>
 
                             <div class="card__desc">
@@ -178,7 +240,7 @@
                                 </p>
 
                                 <span class="card__price">390 руб.</span>
-                                <button class="btn card__btn">Подробнее</button>
+                                <button type="button" class="btn card__btn modal-open">Подробнее</button>
                             </div>
 
                             <div class="card__desc">
@@ -194,7 +256,7 @@
                             </div>
                         </article>
                     </div>
-                    <a href="index.html" class="btn btn--blue section__btn">Хочу реализовать собственную
+                    <a href="index.html#form" class="btn btn--blue section__btn">Хочу реализовать собственную
                         задумку</a>
                 </div>
             </div>

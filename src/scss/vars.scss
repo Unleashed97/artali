@@ -4,8 +4,11 @@ $colors-secondary: #000;
 $colors-blue: #2d5bff;
 $colors-red: #fe6645;
 
-// Typography
+// typography
 $family: 'Inter', sans-serif;
+
+// other
+$shadow: 0 8px 24px rgba($colors-secondary, 0.5);
 
 // media
 $xl: 1200px;
