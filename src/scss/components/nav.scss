@@ -12,6 +12,12 @@
                 gap: 20px;
             }
         }
+
+        .nav__link {
+            &:hover {
+                color: $colors-red;
+            }
+        }
     }
     &__list {
         display: flex;
