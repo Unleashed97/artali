@@ -5,6 +5,7 @@
         }
 
         .section__content {
+            width: 100%;
             min-height: 766px;
 
             padding: 0 50px;
@@ -24,13 +25,6 @@
             grid-template-columns: repeat(2, 1fr);
             grid-auto-rows: auto;
             gap: 106px 32px;
-        }
-
-        .section__btn {
-            width: 100%;
-            justify-self: center;
-            max-width: 554px;
-            grid-column: 1/3;
         }
     }
 
@@ -63,5 +57,14 @@
         color: $colors-secondary;
 
         text-align: center;
+    }
+
+    &__content {
+        margin-bottom: 60px;
+    }
+
+    .section__btn {
+        width: 100%;
+        max-width: 554px;
     }
 }
