@@ -9,9 +9,13 @@
         }
     }
 
-    &__item {
+    &__link {
         display: flex;
         align-items: center;
         gap: 24px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
