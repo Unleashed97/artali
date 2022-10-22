@@ -93,6 +93,10 @@
         &:checked ~ .form__checkfield::after {
             opacity: 1;
         }
+
+        &:focus ~ .form__checkfield {
+            border-color: $colors-red;
+        }
     }
 
     &__checkfield {
