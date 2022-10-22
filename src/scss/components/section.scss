@@ -34,12 +34,26 @@
         }
     }
 
+    &--courses {
+        .section__content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: auto;
+            gap: 82px 58px;
+        }
+    }
+
     &__inner {
         padding-top: 167px;
         padding-bottom: 112px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__title {
+        max-width: 611px;
         margin-bottom: 91px;
 
         font-size: 65px;

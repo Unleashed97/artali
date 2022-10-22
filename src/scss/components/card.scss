@@ -32,4 +32,105 @@
             color: rgba($colors-secondary, 0.5);
         }
     }
+
+    &--black {
+        .card__title {
+            color: $colors-secondary;
+        }
+
+        .card__btn {
+            background-color: $colors-secondary;
+        }
+    }
+
+    &--blue {
+        .card__title {
+            color: $colors-blue;
+        }
+
+        .card__btn {
+            background-color: $colors-blue;
+        }
+    }
+
+    &--red {
+        .card__title {
+            color: $colors-red;
+        }
+
+        .card__btn {
+            background-color: $colors-red;
+        }
+    }
+
+    &--courses {
+        .card__main {
+            display: flex;
+            flex-direction: column;
+
+            min-height: 400px;
+            padding: 20px;
+            margin-bottom: 30px;
+
+            border-radius: 20px;
+            border: 1px solid #e2e3e6;
+        }
+
+        .card__title {
+            flex: 1 0 0;
+            margin-bottom: 21px;
+
+            font-size: 32px;
+            font-weight: 500px;
+            line-height: 40px;
+            letter-spacing: -1.6px;
+        }
+
+        .card__text,
+        .card__desc {
+            flex: 1 0 0;
+            margin-bottom: 9px;
+
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: -0.8px;
+        }
+
+        .card__price {
+            font-size: 56px;
+            font-weight: 500;
+            line-height: 80px;
+            letter-spacing: -2.5px;
+        }
+
+        .card__btn {
+            width: 100%;
+
+            margin-top: 21px;
+        }
+
+        .card__desc {
+            padding: 0 20px;
+        }
+
+        .card__desc-caption {
+            margin-bottom: 20px;
+        }
+
+        .card__list {
+            list-style: disc;
+            margin-left: 32px;
+        }
+
+        .card__item {
+            margin-bottom: 10px;
+
+            color: rgba($colors-secondary, 0.5);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
