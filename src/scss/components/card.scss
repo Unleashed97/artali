@@ -24,12 +24,6 @@
 
         .card__text {
             flex: 1 0 0;
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 30px;
-            letter-spacing: -0.8px;
-
-            color: rgba($colors-secondary, 0.5);
         }
     }
 
@@ -132,5 +126,50 @@
                 margin-bottom: 0;
             }
         }
+    }
+
+    &--news {
+        .card__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 80px;
+
+            margin-bottom: 50px;
+        }
+
+        .card__title,
+        .card__date {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: -1px;
+        }
+
+        .card__date {
+            color: rgba($colors-secondary, 0.5);
+        }
+
+        .card__text {
+            flex: 1 0 0;
+        }
+
+        .card__image {
+            border-radius: 20px;
+            margin-bottom: 42px;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: -0.8px;
+
+        color: rgba($colors-secondary, 0.5);
+    }
+
+    &__image {
+        width: 100%;
     }
 }
