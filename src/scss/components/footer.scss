@@ -1,2 +1,32 @@
 .footer {
+    background-color: $colors-blue;
+    &__inner {
+        min-height: 342px;
+
+        color: $colors-primary;
+    }
+
+    &__top {
+        padding: 65px 0 82px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid rgba(#e2e3e6, 0.2);
+    }
+
+    &__bottom {
+        padding: 47px 0 88px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__policy {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
