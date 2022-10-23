@@ -55,13 +55,11 @@ export const handleScrollToForm = () => {
 
     contactsLinkList.forEach((contactLink) =>
         contactLink.addEventListener('click', () => {
-            if (location.pathname === '/index.html') {
-                burgerBtn.classList.remove('active')
-                nav.classList.remove('active')
-                document.body.classList.remove('fixed')
+            burgerBtn.classList.remove('active')
+            nav.classList.remove('active')
+            document.body.classList.remove('fixed')
 
-                form.scrollIntoView({ behavior: 'smooth' })
-            }
+            form.scrollIntoView({ behavior: 'smooth' })
         }),
     )
 }
