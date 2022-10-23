@@ -1,6 +1,7 @@
 import * as customFunctions from './modules/functions.js'
 customFunctions.handleBurgerMenu()
 customFunctions.handleModal()
+customFunctions.handleScrollToForm()
 // vendors
 
 /*! modernizr 3.6.0 (Custom Build) | MIT *

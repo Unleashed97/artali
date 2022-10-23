@@ -38,6 +38,10 @@
         @media (max-width: $sm) {
             font-size: 30px;
         }
+
+        @media (max-height: $sm) and (orientation: landscape) {
+            font-size: 30px;
+        }
     }
 
     &__subtitle {

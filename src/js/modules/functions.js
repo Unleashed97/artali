@@ -7,6 +7,17 @@ export const handleBurgerMenu = () => {
         nav.classList.toggle('active')
         document.body.classList.toggle('fixed')
     })
+
+    window.addEventListener('resize', () => {
+        if (
+            screen.orientation.type === 'landscape-primary' &&
+            screen.width >= 768
+        ) {
+            burgerBtn.classList.remove('active')
+            nav.classList.remove('active')
+            document.body.classList.remove('fixed')
+        }
+    })
 }
 
 export const handleModal = () => {
@@ -34,4 +45,23 @@ export const handleModal = () => {
             }
         })
     }
+}
+
+export const handleScrollToForm = () => {
+    const contactsLinkList = document.querySelectorAll('.contacts-link')
+    const form = document.querySelector('.form')
+    const nav = document.querySelector('.nav--header')
+    const burgerBtn = document.querySelector('.burger')
+
+    contactsLinkList.forEach((contactLink) =>
+        contactLink.addEventListener('click', () => {
+            if (location.pathname === '/index.html') {
+                burgerBtn.classList.remove('active')
+                nav.classList.remove('active')
+                document.body.classList.remove('fixed')
+
+                form.scrollIntoView({ behavior: 'smooth' })
+            }
+        }),
+    )
 }

@@ -75,7 +75,7 @@ export const html = () => {
                 isBuild,
                 htmlmin({
                     removeComments: true,
-                    collapseWhitespace: true,
+                    collapseWhitespace: false,
                 }),
             ),
         )
